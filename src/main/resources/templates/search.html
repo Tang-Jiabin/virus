@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>DRD</title>
+    <script src="./js/jquery-1.11.2.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/site.css">
+    <link href=".-static/favicon.ico" rel="icon" type="image/x-icon">
+
+</head>
+<body>
+
+<nav role="navigation" class="navbar navbar-public navbar-fixed-top" style="positon:relative;z-index:9999">
+    <div class="navbar-inner">
+        <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#nav-collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span><span style="background-color: #393944"></span>
+            </button>
+            <a href="./index.html" class="navbar-brand">
+                <img src="./img/logo-white.png">
+            </a>
+        </div>
+
+        <div id="nav-collapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-full"><a href="./index.html">Home</a></li>
+
+                <li class="nav-shortened"><a href="./index.html">Home</a></li>
+                <li class="nav-full"><a href="covid.html">COVID-19</a></li>
+                <li class="nav-shortened"><a href="covid.html">COVID-19</a></li>
+                <li class="dropdown nav-full">
+                    <a href="./index.html#" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false" class="dropdown-toggle">
+                        Search
+                        <span class="caret"></span></a>
+                    <ul id="browseDropdown" class="dropdown-menu">
+                        <li class="categories-header"><a href="./search.html#1">
+                            <b>Search for Virus</b></a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="./search.html#2">
+                            <b>Search Targets by Virus</b></a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+
+                    </ul>
+                </li>
+
+
+                <li class="dropdown nav-shortened">
+                    <a href="./index.html#" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Search<span
+                            class="caret"></span></a>
+                    <ul id="browseDropdown" class="dropdown-menu">
+                        <li class="categories-header"><a href="./search.html#1">
+                            <b>Search for Virus</b></a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="./search.html#2">
+                            <b>Search Targets by Virus</b></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-shortened"><a href="./download.html">Download</a></li>
+                <li class="nav-full"><a href="./download.html">Download</a></li>
+                <li class="nav-full"><a href="./faq.html">FAQ</a></li>
+                <li class="nav-shortened"><a href="./faq.html">FAQ</a></li>
+                <li class="nav-shortened"><a href="./contact.html">Contact</a></li>
+                <li class="nav-full"><a href="./contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+</nav>
+
+<div class="content container-fluid">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="search.html">Search for Virus</a></li>
+        <li role="presentation"><a href="searchTargets.html">Search Targets by Virus</a></li>
+    </ul>
+    <div style="height:800px">
+    <div class="row section-title" style="padding-top:110px;">
+        <div class="col-md-12" style="text-align: center">
+            <h1>Search for Virus</h1>
+        </div>
+    </div>
+    <form role="search form" action="browse.php" method="GET" class="row search-form">
+
+        <div class="col-md-2 col-md-push-2">
+            <select class="form-control" name="type">
+                <option value="drugname">Drug Name</option>
+            </select>
+        </div>
+        <div class="col-md-6 col-md-push-2">
+            <div class="search-wrapper">
+                <div class="search-container">
+                    <input name="term" placeholder="Search thousands of drugs &amp; targets..." required="" class="dryg-search typeahead form-control" type="text">
+                </div>
+                <button type="submit" class="btn-primary btn"><span class="icon icon-search"></span>Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+    <!--<div style="height: 150px;background-color:#F2F2F2;width:100%">
+    </div>
+     -->
+</div>
+
+<div id="footer"> <!--start of footer-->
+    <nav role="navigation" class="navbar navbar-public">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <ul class="nav navbar-nav">
+                        <li><p><b>Navigation</b></p></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./search.html">Search</a></li>
+                        <li><a href="./download.html">Download</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="nav navbar-nav">
+                        <li><a href="./index.html#">&nbsp;</a></li>
+                        <li><a href="./download.html">FAQ</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="nav navbar-nav">
+                        <li><p><b>Support By</b></p></li>
+                        -->
+                        <li><a href="http://www.html.net/" target="_blank">Java</a></li>
+                        <li><a href="http://www.mysql.com/" target="_blank">MySQL</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="nav navbar-nav">
+
+                        <li><p><b>Contact Us</b></p></li>
+                        <li><p><span class="glyphicon glyphicon-envelope"></span> &nbsp; &nbsp;lingwang@scut.edu.cn</p>
+                        </li>
+                        <li><p><span class="glyphicon glyphicon-globe"></span> &nbsp; &nbsp;
+                            East Circle Road 382,
+                            Guangzhou, China 510006</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-xs-12"><p> ©:2021 Idruglab, All rights reserved.</p></div>
+            </div>
+        </div>
+    </nav>
+</div>
+</body>
+</html>

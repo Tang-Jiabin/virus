@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>DRD</title>
+  <script src="./js/jquery-1.11.2.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/site.css">
+  <link href=".-static/favicon.ico" rel="icon" type="image/x-icon">
+
+</head>
+<body>
+
+<nav role="navigation" class="navbar navbar-public navbar-fixed-top" style="positon:relative;z-index:9999">
+  <div class="navbar-inner">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#nav-collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span><span style="background-color: #393944"></span>
+      </button>
+      <a href="./index.html" class="navbar-brand">
+        <img src="./img/logo-white.png">
+      </a>
+    </div>
+
+    <div id="nav-collapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="nav-full"><a href="./index.html">Home</a></li>
+
+        <li class="nav-shortened"><a href="./index.html">Home</a></li>
+        <li class="nav-full"><a href="covid.html">COVID-19</a></li>
+        <li class="nav-shortened"><a href="covid.html">COVID-19</a></li>
+        <li class="dropdown nav-full">
+          <a href="./index.html#" data-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false" class="dropdown-toggle">
+            Search
+            <span class="caret"></span></a>
+          <ul id="browseDropdown" class="dropdown-menu">
+            <li class="categories-header"><a href="./search.html#1">
+              <b>Search for Virus</b></a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="./searchBystructure.html">
+              <b>Search Targets by Virus</b></a>
+            </li>
+            <li role="separator" class="divider"></li>
+
+          </ul>
+        </li>
+
+
+        <li class="dropdown nav-shortened">
+          <a href="./index.html#" data-toggle="dropdown" role="button"
+             aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Search<span
+                  class="caret"></span></a>
+          <ul id="browseDropdown" class="dropdown-menu">
+            <li class="categories-header"><a href="./search.html#1">
+              <b>Search for Virus</b></a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="./searchBystructure.html">
+              <b>Search Targets by Virus</b></a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-shortened"><a href="./download.html">Download</a></li>
+        <li class="nav-full"><a href="./download.html">Download</a></li>
+        <li class="nav-full"><a href="./faq.html">FAQ</a></li>
+        <li class="nav-shortened"><a href="./faq.html">FAQ</a></li>
+        <li class="nav-shortened"><a href="./contact.html">Contact</a></li>
+        <li class="nav-full"><a href="./contact.html">Contact</a></li>
+
+      </ul>
+
+    </div>
+</nav>
+
+<div style="padding-top: 110px" class="container">
+
+  <div class="col-sm-3">
+    <div class="widget-box">
+      <div class="widget-header header-color-green2">
+        <h4 class="lighter smaller">Drug</h4>
+      </div>
+      <div class="widget-body">
+        <div class="widget-main padding-8">
+          <div id="tree1" class="tree tree-unselectable"><div class="tree-folder" style="display:none;">				<div class="tree-folder-header">					<i class="icon-folder-close"></i>					<div class="tree-folder-name"></div>				</div>				<div class="tree-folder-content"></div>				<div class="tree-loader" style="display: none;"></div>			</div>			<div class="tree-item" style="display:none;">								<div class="tree-item-name"></div>			</div><div class="tree-folder" style="display: block;">				<div class="tree-folder-header">					<i class="icon-folder-close red"></i>					<div class="tree-folder-name">drug name</div>				</div>				<div class="tree-folder-content"></div>				<div class="tree-loader" style="display: none;"><div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div></div>			</div></div>
+        </div>
+      </div></div>
+    <div class="widget-box">
+      <div class="widget-header header-color-green2">
+        <h4 class="lighter smaller">Target</h4>
+      </div>
+      <div class="widget-body">
+        <div class="widget-main padding-8">
+          <div id="tree2" class="tree tree-unselectable"><div class="tree-folder" style="display:none;">				<div class="tree-folder-header">					<i class="icon-folder-close"></i>					<div class="tree-folder-name"></div>				</div>				<div class="tree-folder-content"></div>				<div class="tree-loader" style="display: none;"></div>			</div>			<div class="tree-item" style="display:none;">								<div class="tree-item-name"></div>			</div><div class="tree-folder" style="display: block;">				<div class="tree-folder-header">					<i class="icon-folder-close red"></i>					<div class="tree-folder-name">target name</div>				</div>				<div class="tree-folder-content"></div>				<div class="tree-loader" style="display: none;"><div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div></div>			</div></div>
+        </div>
+      </div></div>
+  </div>
+
+  <div class="col-md-9">
+    <div class="drd-list-container">
+      <ul class="drd-list drd-list-column">
+        <li class="drd">
+          <div class="drd-inner">
+            <a href="compound/DB01048.png" target="_blank" alt="drug strcuture" title="drug strcuture" class="related-logo store-logo">
+              <img src="compound/DB01048.png" alt="Drug strcuture"></a>
+            <div class="card-meta">
+              <ul class="list-unstyled static">
+                <li><p>Drug Name:</p> &nbsp;<font>Abacavir</font></li>
+                <li><p>Drug ID:</p> &nbsp;<font>DRDD0900</font></li>
+                <li><p>Drug Formula:</p> &nbsp;<font>C14H18N6O</font></li>
+                <li><p>Drug Weight:</p> &nbsp;<font>286.3323</font></li>
+                <li><p>CAS Number:</p> &nbsp;<font>136470-78-5</font></li>
+              </ul>
+            </div>
+            <div style="float:right;">
+              <a href="drugDetail.php?drugid=DRDD0900" target="_blank" title="">
+                <div title="" class="btn btn-primary">Show Details </div>
+              </a>
+
+            </div>
+          </div>
+          <div class="details-cont">
+            <p class="details">
+              <b>Smiles:</b> OC[C@H]1C[C@@H](n2c3nc(nc(NC4CC4)c3nc2)N)C=C1
+            </p>
+          </div>
+        </li>
+      </ul>                         <ul class="drd-list drd-list-column">
+      <li class="drd">
+        <div class="drd-inner">
+          <a href="compound/DB05812.png" target="_blank" alt="drug strcuture" title="drug strcuture" class="related-logo store-logo">
+            <img src="compound/DB05812.png" alt="Drug strcuture"></a>
+          <div class="card-meta">
+            <ul class="list-unstyled static">
+              <li><p>Drug Name:</p> &nbsp;<font>Abiraterone</font></li>
+              <li><p>Drug ID:</p> &nbsp;<font>DRDD1375</font></li>
+              <li><p>Drug Formula:</p> &nbsp;<font>C24H31NO</font></li>
+              <li><p>Drug Weight:</p> &nbsp;<font>349.5090</font></li>
+              <li><p>CAS Number:</p> &nbsp;<font>154229-19-3</font></li>
+            </ul>
+          </div>
+          <div style="float:right;">
+            <a href="drugDetail.php?drugid=DRDD1375" target="_blank" title="">
+              <div title="" class="btn btn-primary">Show Details </div>
+            </a>
+
+          </div>
+        </div>
+        <div class="details-cont">
+          <p class="details">
+            <b>Smiles:</b> O[C@@H]1CC2=CC[C@H]3[C@@H]4CC=C([C@]4(CC[C@@H]3[C@]2(CC1)C)C)c1cccnc1
+          </p>
+        </div>
+      </li>
+    </ul>                         <ul class="drd-list drd-list-column">
+      <li class="drd">
+        <div class="drd-inner">
+          <a href="compound/DB00659.png" target="_blank" alt="drug strcuture" title="drug strcuture" class="related-logo store-logo">
+            <img src="compound/DB00659.png" alt="Drug strcuture"></a>
+          <div class="card-meta">
+            <ul class="list-unstyled static">
+              <li><p>Drug Name:</p> &nbsp;<font>Acamprosate</font></li>
+              <li><p>Drug ID:</p> &nbsp;<font>DRDD0524</font></li>
+              <li><p>Drug Formula:</p> &nbsp;<font>C5H11NO4S</font></li>
+              <li><p>Drug Weight:</p> &nbsp;<font>181.2100</font></li>
+              <li><p>CAS Number:</p> &nbsp;<font>77337-76-9</font></li>
+            </ul>
+          </div>
+          <div style="float:right;">
+            <a href="drugDetail.php?drugid=DRDD0524" target="_blank" title="">
+              <div title="" class="btn btn-primary">Show Details </div>
+            </a>
+
+          </div>
+        </div>
+        <div class="details-cont">
+          <p class="details">
+            <b>Smiles:</b> S(O)(=O)(=O)CCCNC(=O)C
+          </p>
+        </div>
+      </li>
+    </ul>                         <ul class="drd-list drd-list-column">
+      <li class="drd">
+        <div class="drd-inner">
+          <a href="compound/DB00284.png" target="_blank" alt="drug strcuture" title="drug strcuture" class="related-logo store-logo">
+            <img src="compound/DB00284.png" alt="Drug strcuture"></a>
+          <div class="card-meta">
+            <ul class="list-unstyled static">
+              <li><p>Drug Name:</p> &nbsp;<font>Acarbose</font></li>
+              <li><p>Drug ID:</p> &nbsp;<font>DRDD0171</font></li>
+              <li><p>Drug Formula:</p> &nbsp;<font>C25H43NO18</font></li>
+              <li><p>Drug Weight:</p> &nbsp;<font>645.6048</font></li>
+              <li><p>CAS Number:</p> &nbsp;<font>56180-94-0</font></li>
+            </ul>
+          </div>
+          <div style="float:right;">
+            <a href="drugDetail.php?drugid=DRDD0171" target="_blank" title="">
+              <div title="" class="btn btn-primary">Show Details </div>
+            </a>
+
+          </div>
+        </div>
+        <div class="details-cont">
+          <p class="details">
+            <b>Smiles:</b> O1[C@H](C)[C@@H](N[C@H]2C=C(CO)[C@H](O)[C@H](O)[C@H]2O)[C@H](O)[C@@H](O)[C@H]1O[C@H]1[C@H](O)[C@@H](O)[C@H](O[C@@H]1CO)O[C@H]1[C@H](O)[C@@H](O)[C@@H](O[C@@H]1CO)O
+          </p>
+        </div>
+      </li>
+    </ul>                         <ul class="drd-list drd-list-column">
+      <li class="drd">
+        <div class="drd-inner">
+          <a href="compound/DB01193.png" target="_blank" alt="drug strcuture" title="drug strcuture" class="related-logo store-logo">
+            <img src="compound/DB01193.png" alt="Drug strcuture"></a>
+          <div class="card-meta">
+            <ul class="list-unstyled static">
+              <li><p>Drug Name:</p> &nbsp;<font>Acebutolol</font></li>
+              <li><p>Drug ID:</p> &nbsp;<font>DRDD1039</font></li>
+              <li><p>Drug Formula:</p> &nbsp;<font>C18H28N2O4</font></li>
+              <li><p>Drug Weight:</p> &nbsp;<font>336.4259</font></li>
+              <li><p>CAS Number:</p> &nbsp;<font>37517-30-9</font></li>
+            </ul>
+          </div>
+          <div style="float:right;">
+            <a href="drugDetail.php?drugid=DRDD1039" target="_blank" title="">
+              <div title="" class="btn btn-primary">Show Details </div>
+            </a>
+
+          </div>
+        </div>
+        <div class="details-cont">
+          <p class="details">
+            <b>Smiles:</b> O(CC(O)CNC(C)C)c1ccc(NC(=O)CCC)cc1C(=O)C
+          </p>
+        </div>
+      </li>
+    </ul>                         <ul class="drd-list drd-list-column">
+      <li class="drd">
+        <div class="drd-inner">
+          <a href="compound/DB01418.png" target="_blank" alt="drug strcuture" title="drug strcuture" class="related-logo store-logo">
+            <img src="compound/DB01418.png" alt="Drug strcuture"></a>
+          <div class="card-meta">
+            <ul class="list-unstyled static">
+              <li><p>Drug Name:</p> &nbsp;<font>Acenocoumarol</font></li>
+              <li><p>Drug ID:</p> &nbsp;<font>DRDD1193</font></li>
+              <li><p>Drug Formula:</p> &nbsp;<font>C19H15NO6</font></li>
+              <li><p>Drug Weight:</p> &nbsp;<font>353.3255</font></li>
+              <li><p>CAS Number:</p> &nbsp;<font>152-72-7</font></li>
+            </ul>
+          </div>
+          <div style="float:right;">
+            <a href="drugDetail.php?drugid=DRDD1193" target="_blank" title="">
+              <div title="" class="btn btn-primary">Show Details </div>
+            </a>
+
+          </div>
+        </div>
+        <div class="details-cont">
+          <p class="details">
+            <b>Smiles:</b> O1c2c(cccc2)C(O)=C(C(CC(=O)C)c2ccc([N+](=O)[O-])cc2)C1=O
+          </p>
+        </div>
+      </li>
+    </ul>                         <nav><ul class="pagination"> <li class="active"><span>1</span></li> <li><a href="?d=a&amp;page=2">2</a></li> <li><a href="?d=a&amp;page=3">3</a></li> <li><a href="?d=a&amp;page=4">4</a></li> <li><a href="?d=a&amp;page=5">5</a></li> <li><a href="?d=a&amp;page=6">6</a></li> <li><a href="?d=a&amp;page=7">7</a></li> <li><a href="?d=a&amp;page=8">8</a></li> <li><a href="?d=a&amp;page=9">9</a></li> <li><a href="?d=a&amp;page=27">...27</a></li> <li><a href="?d=a&amp;page=2"> »</a></li> </ul><nav>
+    </nav></nav></div>
+  </div>
+</div>
+
+<div id="footer"> <!--start of footer-->
+  <nav role="navigation" class="navbar navbar-public">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="nav navbar-nav">
+            <li><p><b>Navigation</b></p></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./search.html">Search</a></li>
+            <li><a href="./download.html">Download</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html#">&nbsp;</a></li>
+            <li><a href="./download.html">FAQ</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <ul class="nav navbar-nav">
+            <li><p><b>Support By</b></p></li>
+            -->
+            <li><a href="http://www.html.net/" target="_blank">Java</a></li>
+            <li><a href="http://www.mysql.com/" target="_blank">MySQL</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <ul class="nav navbar-nav">
+
+            <li><p><b>Contact Us</b></p></li>
+            <li><p><span class="glyphicon glyphicon-envelope"></span> &nbsp; &nbsp;lingwang@scut.edu.cn</p>
+            </li>
+            <li><p><span class="glyphicon glyphicon-globe"></span> &nbsp; &nbsp;
+              East Circle Road 382,
+              Guangzhou, China 510006</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div class="row">
+        <div class="col-xs-12"><p> ©:2021 Idruglab, All rights reserved.</p></div>
+      </div>
+    </div>
+  </nav>
+</div>
+</body>
+</html>
